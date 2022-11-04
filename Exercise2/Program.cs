@@ -12,7 +12,8 @@ namespace Exercise2
         private int[] zaqy = new int[117];
         private int n;
         int i;
-        
+        private int k;
+
         public void Input()
         {
             while (true)
@@ -59,6 +60,12 @@ namespace Exercise2
             {
                 Console.Write(zaqy[i] + " ");
             }
+        }
+        public void Mergesort()
+        {
+            if (i>= n)
+                return;
+            int mid = (n-1)+()
         }
     }
 }
