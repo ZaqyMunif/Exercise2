@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,7 +38,27 @@ namespace Exercise2
         }
         public void InsertionSort()
         {
-
+            Console.WriteLine("");
+            Console.WriteLine("----------");
+            Console.WriteLine(" Elemen Array yang tersusun ");
+            Console.WriteLine("----------");
+            for (int i = 0; i < n; i++) 
+            {
+                for (int mz = i - 1; mz>= 0; n = 1 )
+                {
+                    if (i < zaqy[mz])
+                    {
+                        zaqy[mz + 1] = zaqy[mz];
+                        mz--;
+                        zaqy[mz + 1] = n;
+                    }
+                }
+            }
+            Console.Write(" Array Is : ");
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(zaqy[i] + " ");
+            }
         }
     }
 }
