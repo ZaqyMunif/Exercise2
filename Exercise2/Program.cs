@@ -10,6 +10,7 @@ namespace Exercise2
     {
         private int[] zaqy = new int[117];
         private int n;
+        int i;
         
         public void Input()
         {
@@ -23,7 +24,17 @@ namespace Exercise2
                 else
                     Console.WriteLine("\n Maksimal Array 117 element. \n");
             }
+            Console.WriteLine("");
+            Console.WriteLine(" Enter array element ");
+            Console.WriteLine("---------------------");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1= Console.ReadLine();
+                zaqy[i] = Int32.Parse(s1);
+            }
 
         }
+        
     }
 }
