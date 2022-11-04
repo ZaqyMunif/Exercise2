@@ -35,6 +35,9 @@ namespace Exercise2
             }
 
         }
-        
+        public void InsertionSort()
+        {
+
+        }
     }
 }
